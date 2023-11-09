@@ -1,7 +1,6 @@
 ﻿using FluentValidation;
 using GW.CustomerManagement.Application.Interfaces;
 using GW.CustomerManagement.Application.ViewModels;
-using GW.CustomerManagement.Domain.Entities;
 using GW.CustomerManagement.Domain.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 

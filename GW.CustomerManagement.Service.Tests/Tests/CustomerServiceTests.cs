@@ -1,4 +1,5 @@
 ﻿using GW.CustomerManagement.Domain.Entities;
+using GW.CustomerManagement.Domain.Exceptions;
 using GW.CustomerManagement.Domain.Interfaces.Repositories;
 using GW.CustomerManagement.Domain.ValueObjects;
 using GW.CustomerManagement.Service.Services;
@@ -52,7 +53,7 @@ public class CustomerServiceTests
         _customerRepositoy.Setup(cr => cr.SearchByDocuments(It.IsAny<string>(), It.IsAny<string>())).Returns(_customerList);
 
         // Act and Assert
-        await Assert.ThrowsAsync<Exception>(async () =>  await customerService.Create(customer));
+        await Assert.ThrowsAsync<CustomerManagementException>(async () =>  await customerService.Create(customer));
     }
 
     [Fact]
@@ -89,7 +90,7 @@ public class CustomerServiceTests
         _customerRepositoy.Setup(cr => cr.Get(It.IsAny<Guid>())).ReturnsAsync((Customer)null);
 
         // Act and Assert
-        await Assert.ThrowsAsync<Exception>(async () => await customerService.Delete(userId));
+        await Assert.ThrowsAsync<CustomerManagementException>(async () => await customerService.Delete(userId));
     }
 
     [Fact]
@@ -128,7 +129,7 @@ public class CustomerServiceTests
         _customerRepositoy.Setup(cr => cr.Get(It.IsAny<Guid>())).ReturnsAsync((Customer)null);
 
         // Act and Assert
-        await Assert.ThrowsAsync<Exception>(async () => await customerService.UpdateName(userId, newName));
+        await Assert.ThrowsAsync<CustomerManagementException>(async () => await customerService.UpdateName(userId, newName));
     }
 
     [Fact]
@@ -167,6 +168,6 @@ public class CustomerServiceTests
         _customerRepositoy.Setup(cr => cr.Get(It.IsAny<Guid>())).ReturnsAsync((Customer)null);
 
         // Act and Assert
-        await Assert.ThrowsAsync<Exception>(async () => await customerService.UpdateAddress(userId, newAddress));
+        await Assert.ThrowsAsync<CustomerManagementException>(async () => await customerService.UpdateAddress(userId, newAddress));
     }
 }
