@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Domain", "04 - Domain", "{29A169AD-4D8B-40BB-A8DE-284E9D31FBCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Service", "03 - Service", "{F3CD4EC7-C3AD-42CC-927E-40405B1E092A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Application", "02 - Application", "{3C3B97AD-E3A3-4358-A697-F4B74AC5602B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{45DCC016-44DC-4C5A-8E10-807351616F37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Infrastructure", "05 - Infrastructure", "{88EE7219-6A3D-4C75-9B36-3DE64DECEEB4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GW.CustomerManagement.API", "GW.CustomerManagement.API\GW.CustomerManagement.API.csproj", "{A4D05971-A42D-4B9C-9060-C60383514028}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GW.CustomerManagement.Application", "GW.CustomerManagement.Application\GW.CustomerManagement.Application.csproj", "{3F854C22-3645-45FE-93EE-AD32E0E16FA7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GW.CustomerManagement.Service", "GW.CustomerManagement.Service\GW.CustomerManagement.Service.csproj", "{0C5B98B4-4927-4265-80DA-FF4DA9454BAC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GW.CustomerManagement.Domain", "GW.CustomerManagement.Domain\GW.CustomerManagement.Domain.csproj", "{D6CCC13B-F227-403C-8FAC-797FFB29B631}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GW.CustomerManagement.Data", "GW.CustomerManagement.Data\GW.CustomerManagement.Data.csproj", "{25233F79-5FEB-4D10-896B-5C1881D2830E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GW.CustomerManagement.Service.Tests", "GW.CustomerManagement.Service.Tests\GW.CustomerManagement.Service.Tests.csproj", "{826D829D-1310-4697-9D2F-4551A9C75914}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GW.CustomerManagement.Domain.Tests", "GW.CustomerManagement.Domain.Tests\GW.CustomerManagement.Domain.Tests.csproj", "{9ADAE438-2153-468F-B7BB-AB64A99B6ADD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4D05971-A42D-4B9C-9060-C60383514028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D05971-A42D-4B9C-9060-C60383514028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D05971-A42D-4B9C-9060-C60383514028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D05971-A42D-4B9C-9060-C60383514028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F854C22-3645-45FE-93EE-AD32E0E16FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F854C22-3645-45FE-93EE-AD32E0E16FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F854C22-3645-45FE-93EE-AD32E0E16FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F854C22-3645-45FE-93EE-AD32E0E16FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C5B98B4-4927-4265-80DA-FF4DA9454BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C5B98B4-4927-4265-80DA-FF4DA9454BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C5B98B4-4927-4265-80DA-FF4DA9454BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C5B98B4-4927-4265-80DA-FF4DA9454BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6CCC13B-F227-403C-8FAC-797FFB29B631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6CCC13B-F227-403C-8FAC-797FFB29B631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6CCC13B-F227-403C-8FAC-797FFB29B631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6CCC13B-F227-403C-8FAC-797FFB29B631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25233F79-5FEB-4D10-896B-5C1881D2830E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25233F79-5FEB-4D10-896B-5C1881D2830E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25233F79-5FEB-4D10-896B-5C1881D2830E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25233F79-5FEB-4D10-896B-5C1881D2830E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{826D829D-1310-4697-9D2F-4551A9C75914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{826D829D-1310-4697-9D2F-4551A9C75914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{826D829D-1310-4697-9D2F-4551A9C75914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{826D829D-1310-4697-9D2F-4551A9C75914}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ADAE438-2153-468F-B7BB-AB64A99B6ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ADAE438-2153-468F-B7BB-AB64A99B6ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ADAE438-2153-468F-B7BB-AB64A99B6ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ADAE438-2153-468F-B7BB-AB64A99B6ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4D05971-A42D-4B9C-9060-C60383514028} = {45DCC016-44DC-4C5A-8E10-807351616F37}
+		{3F854C22-3645-45FE-93EE-AD32E0E16FA7} = {3C3B97AD-E3A3-4358-A697-F4B74AC5602B}
+		{0C5B98B4-4927-4265-80DA-FF4DA9454BAC} = {F3CD4EC7-C3AD-42CC-927E-40405B1E092A}
+		{D6CCC13B-F227-403C-8FAC-797FFB29B631} = {29A169AD-4D8B-40BB-A8DE-284E9D31FBCC}
+		{25233F79-5FEB-4D10-896B-5C1881D2830E} = {88EE7219-6A3D-4C75-9B36-3DE64DECEEB4}
+		{826D829D-1310-4697-9D2F-4551A9C75914} = {F3CD4EC7-C3AD-42CC-927E-40405B1E092A}
+		{9ADAE438-2153-468F-B7BB-AB64A99B6ADD} = {29A169AD-4D8B-40BB-A8DE-284E9D31FBCC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {598E1CCE-E934-4A0E-80AE-EE2B9827D38C}
+	EndGlobalSection
+EndGlobal
